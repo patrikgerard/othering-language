@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Online Hierarchical Agglomerative Clustering</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -36,13 +36,30 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/toast.css" />
 
+
+  <script src="static/js/toast.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+<script>
+
+		
+		function notAvailable() {
+			toastNotif({
+				text: 'Not Yet Up on arXiv',
+				color: '#FFC5C5',
+				timeout: 5000,
+				icon: 'error'
+			});
+		}
+	
+</script>
 </head>
 <body>
 
@@ -52,28 +69,34 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Modeling Information Narrative Evolution on Telegram during the Russia-Ukraine War</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Patrick Gerard</a> <sup>1, 2</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Louis Penafiel</a> <sup>2</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Svitlana Volkova</a> <sup>2</sup>
+                  </span>
+                  <span class="author-block">
+                    <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Kristina Lerman</a> <sup>1</sup>
+                  </span>
+                  <span class="author-block">
+                    <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Tim Weninger</a> <sup>3</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <!-- <span class="author-block">1: Information Sciences Institute; 2: Aptima, Inc.; 3: University of Notre Dame<br>Conferance name and year</span> -->
+                    <span class="author-block">1: Information Sciences Institute; 2: Aptima, Inc.; 3: University of Notre Dame</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="static/pdfs/Modeling_Information_Narrative_Evolution_on_Telegram_during_the_Russia-Ukraine_War_No_Ethics.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -83,7 +106,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,11 +114,11 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/patrikgerard/online_agglomerative_clustering" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -106,12 +129,20 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a onclick="notAvailable()"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
+                <!-- ArXiv abstract Link
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -148,8 +179,8 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+            Following the Russian Federation's invasion of Ukraine in February 2022, a multitude of information narratives emerged within both pro-Russian and pro-Ukrainian communities online. As the conflict progresses, so too do the information narratives,
+            constantly adapting and influencing local and global community perceptions and attitudes. This dynamic nature on the evolving information environment (IE) underscores a critical need to fully discern how narratives evolve and affect online communities. Existing research, however, often fails to capture information narrative evolution, overlooking both the fluid nature of narratives and the internal mechanisms that drive their evolution. Recognizing this, we introduce a novel approach designed to both model narrative evolution and uncover the underlying mechanisms driving them. In this work we perform a comparative discourse analysis across communities on Telegram covering the initial three months following the invasion. First, we uncover substantial disparities in narratives and perceptions between pro-Russian and pro-Ukrainian communities. Then, we probe deeper into prevalent narratives of each group, identifying key themes and examining the underlying mechanisms fueling their evolution. Finally, we explore principal influences and factors that shape the development and spread of these narratives.          </p>
         </div>
       </div>
     </div>
