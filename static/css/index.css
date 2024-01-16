@@ -27,6 +27,26 @@ body {
   font-family: 'Google Sans', sans-serif;
 }
 
+#results-carousel .item img {
+  max-height: 100%; /* Images will scale up to the container's height */
+  width: auto; /* This ensures the images maintain their aspect ratio */
+}
+
+
+.hero-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%; /* Ensure the container has a defined height */
+}
+
+#results-carousel {
+  max-height: 20%; /* Adjust this percentage to your preference */
+  overflow: auto; /* Allows scrolling if content is larger than max-height */
+}
+
+
+
 
 .publication-title {
 }
